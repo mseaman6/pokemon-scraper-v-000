@@ -9,7 +9,6 @@ class Pokemon
     @id = id
     @db = db
     @@all << self
-    binding.pry
   end
 
   def self.all
