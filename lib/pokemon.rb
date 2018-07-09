@@ -31,7 +31,6 @@ class Pokemon
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_hp, self.id)
     self.hp = db.execute("SELECT hp FROM pokemon WHERE id = ?", self.id)[0]
     self.hp
-    binding.pry
   end
 
 end
