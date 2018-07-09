@@ -3,10 +3,11 @@ class Pokemon
   @@all = []
   attr_accessor :name, :type, :id, :db, :hp
 
-  def initialize(name:, type:, id:, db:)
+  def initialize(name:, type:, id:, hp:, db:)
     @name = name
     @type = type
     @id = id
+    @hp = hp
     @db = db
     @@all << self
   end
@@ -24,6 +25,7 @@ class Pokemon
     name_from_id = new_pokemon[1]
     type_from_id = new_pokemon[2]
     id_from_id = new_pokemon[0]
+    hp_from_id = new_pokemon[3]
     self.new(name: name_from_id, type: type_from_id, id: id_from_id, db: db)
   end
 
