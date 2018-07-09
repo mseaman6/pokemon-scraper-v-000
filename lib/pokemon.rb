@@ -23,7 +23,7 @@ class Pokemon
     name_from_id = new_pokemon[1]
     type_from_id = new_pokemon[2]
     id_from_id = new_pokemon[0]
-    self.new(name: name_from_id, type: type_from_id, id: id_from_id, db)
+    self.new(name: name_from_id, type: type_from_id, id: id_from_id, db: db)
   end
 
 end
